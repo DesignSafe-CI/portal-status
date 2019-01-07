@@ -7,32 +7,67 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Portal Status</title>
-
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 2rem;
+        background: #111;
+        color: #FFF;
+      }
+      .center-content {
+        text-align:center;
+      }
+      .construction-img {
+        margin: 0 1rem 1rem;
+        width: 4rem;
+        display: inline;
+      }
+      .construction-text {
+        display: inline;
+      }
+      .msg-pad {
+        padding: 1rem;
+      }
+      .btn-tacc {
+        border: 1px solid #1c3664;
+        background: #1c3664;
+        color:  #DDD;
+      }
+      .btn-tacc:hover {
+        border: 1px solid #FFF;
+        background: #1c3664;
+        color:  #FFF;
+      }
+    </style>
 </head>
 
 <body>
-    <div class="jumbotron">
-
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./taccLogo.png" class="img-fluid"> </img>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="center-content">
+            <p>
+              <img src="./taccLogo.png" class="img-fluid"> </img>
+              <div>
+                <img src="./construction_red.svg.png" class="img-fluid construction-img"></img>
+                <h1 class="text-warning construction-text">PORTAL UNDER MAINTENANCE</h1>
+                <img src="./construction_red.svg.png" class="img-fluid construction-img"></img>
+              </div>
+              <h3 class="bg-danger msg-pad">This portal is temporarily unavailable due to systems maintanance.</h3>
+              <h4>We apologize for the inconvenience.</h4>
+              <h4>To check on the current status of TACC services click the button below.</h4>
+              <a class="btn btn-lg btn-tacc" href="https://tacc.utexas.edu" role="button">TACC</a>
+            </p>
+          </div>
         </div>
-
-        <h1 class="display-4">This portal is temporarily unavailable for maintanance</h1>
-        <p class="lead">But we will be back shortly...</p>
-        <hr class="my-4">
-        <p> Check TACC services and more here.</p>
-
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="https://tacc.utexas.edu" role="button">TACC</a>
-        </p>
+      </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
